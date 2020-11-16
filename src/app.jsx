@@ -1,7 +1,8 @@
-import React from "react";
+import React from 'react'
+import './test.css'
 
 function App() {
-  return <div data-testid="app">Template Basico</div>;
+  return <div data-testid="app">Template Básico</div>
 }
 
-export default App;
+export default App

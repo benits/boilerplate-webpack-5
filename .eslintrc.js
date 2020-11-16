@@ -1,6 +1,8 @@
 module.exports = {
   settings: {
-    'import/resolver': 'webpack'
+    'import/resolver': 'webpack',
+    'import/modules': 'webpack',
+    'import/extensions': ['.js', '.jsx']
   },
   env: {
     browser: true
@@ -10,6 +12,7 @@ module.exports = {
     'airbnb/hooks',
     'plugin:prettier/recommended',
     'plugin:react/recommended',
+    'plugin:import/react',
     'prettier'
   ],
   parserOptions: {
@@ -26,7 +29,6 @@ module.exports = {
     '@babel/new-cap': 'error',
     'react/jsx-uses-react': 'error',
     'react/jsx-uses-vars': 'error',
-    commonjs: 'true',
-    amd: 'true'
+    'import/no-unresolved': [0, { caseSensitive: false }]
   }
 }
