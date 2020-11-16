@@ -1,0 +1,79 @@
+{
+  "name": "webpack-boilerplate",
+  "version": "1.0.0",
+  "description": "Customizable Boilerplate using Webpack 5, Babel, PostCSS and Sass with an active development server and an optimized production build.",
+  "main": "./dist/index.html",
+  "author": "Matheus Benites",
+  "license": "MIT",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
+    "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js",
+    "postinstall": "husky install",
+    "eslint:verify": "eslint . --ext .js,.jsx && stylelint '**/*.css'"
+  },
+  "keywords": [
+    "webpack",
+    "webpack 5",
+    "webpack boilerplate"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/eslint-plugin": "^7.12.1",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-transform-react-jsx": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.1",
+    "autoprefixer": "^10.0.2",
+    "babel-loader": "^8.2.0",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "cross-env": "^7.0.2",
+    "css-loader": "^5.0.0",
+    "eslint": "7.2.0",
+    "eslint-config-airbnb": "18.2.1",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-import-resolver-webpack": "^0.13.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "4.0.0",
+    "file-loader": "^6.2.0",
+    "husky": "^5.0.0-beta.0",
+    "node-sass": "^4.14.1",
+    "postcss-loader": "^4.0.4",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "2.1.2",
+    "sass-loader": "^10.0.3",
+    "style-loader": "^2.0.0",
+    "stylelint": "^13.7.2",
+    "stylelint-config-standard": "^20.0.0",
+    "url-loader": "^4.1.1",
+    "webpack-cli": "^4.0.0",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://matheus-benits@bitbucket.org/easycarros/boilerplate-webpack-basic.git"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
+    "mini-svg-data-uri": "^1.2.3",
+    "css-minimizer-webpack-plugin": "^1.1.5",
+    "html-webpack-plugin": "^5.0.0-alpha.14",
+    "terser-webpack-plugin": "^5.0.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^6.2.1",
+    "webpack": "^5.1.3",
+    "webpack-merge": "^5.2.0",
+    "webpack-bundle-analyzer": "^4.1.0",
+    "mini-css-extract-plugin": "^1.0.0"
+  },
+  "eslintIgnore": [
+    "*.test.js"
+  ]
+}

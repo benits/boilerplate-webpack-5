@@ -1,13 +1,14 @@
-# 📦 webpack Boilerplate
+# Welcome to webpack-boilerplate 👋
 
-Sensible webpack 5 boilerplate using Babel, PostCSS and Sass with a hot dev server and an optimized production build.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#)
+[![Twitter: papoddev](https://img.shields.io/twitter/follow/papoddev.svg?style=social)](https://twitter.com/papoddev)
 
-## Installation
+> Customizable Boilerplate using Webpack 5, Babel, PostCSS and Sass with an active development server and an optimized production build.
 
-```
-git clone https://matheus-benits@bitbucket.org/easycarros/boilerplate-webpack-basic.git
-cd boilerplate-webpack-basic
-yarn
+## Install
+
+```sh
+npm install
 ```
 
 ## Usage
@@ -18,7 +19,9 @@ yarn
 yarn start
 ```
 
-You can view the development server at `localhost:8080`.
+You can view the development server at `localhost:3000`.
+
+You can view the bundle Analyzer server at `http://127.0.0.1:8888`.
 
 ### Production build
 
@@ -44,8 +47,9 @@ cd dist && http-server
 - [Babel](https://babeljs.io/)
 - [Sass](https://sass-lang.com/)
 - [PostCSS](https://postcss.org/)
-- [jest](https://jestjs.io/)
-- [@testing-library](https://testing-library.com/)
+- [ESlint-(airbnb)](https://eslint.org/)
+- [Prettier](https://prettier.io/)
+- [Husky - pre-commit](https://typicode.github.io/husky/#/)
 
 ## Dependencies
 
@@ -82,10 +86,29 @@ cd dist && http-server
 - [`optimize-css-assets-webpack-plugin`](https://github.com/NMFR/optimize-css-assets-webpack-plugin) - Optimize and minimize CSS assets
 - [`terser-webpack-plugin`](https://github.com/webpack-contrib/terser-webpack-plugin) - Optimize and minimize JavaScript
 
-## Author
+## Authors
 
-- Matheus Benites
+👤 **Matheus Benites**
 
-## License
+* Website: [Blog](https://bit.ly/Papo-de-Dev)
+* Twitter: [@papoddev](https://twitter.com/papoddev)
+* Github: [@benits](https://github.com/benits)
+* LinkedIn: [@benites-amorim](https://linkedin.com/in/benites-amorim)
 
-This project is private
+👤 **Uellington Palma**
+
+* Twitter: [@uell_palma](https://twitter.com/uell_palma)
+* Github: [@uellpalma](https://github.com/uellpalma)
+* LinkedIn: [@uell-palma](https://linkedin.com/in/uell-palma)
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check [issues page](https://github.com/benits/boilerplate-webpack-5/issues). You can also take a look at the [contributing guide](https://github.com/benits/boilerplate-webpack-5/blob/main/CONTRIBUTING.md).
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+***
