@@ -23,7 +23,7 @@ module.exports = {
     sourceType: 'module'
   },
   plugins: ['react', 'prettier', '@babel'],
-  ignorePatterns: ['temp.js', 'dist/*', './node_modules'],
+  ignorePatterns: ['dist/*', 'node_modules/*', 'config/*'],
   rules: {
     'prettier/prettier': 'error',
     '@babel/new-cap': 'error',

@@ -50,6 +50,19 @@
     "stylelint-config-standard": "^20.0.0",
     "url-loader": "^4.1.1",
     "webpack-cli": "^4.0.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^6.2.1",
+    "css-minimizer-webpack-plugin": "^1.1.5",
+    "html-webpack-plugin": "^5.0.0-alpha.14",
+    "mini-css-extract-plugin": "^1.0.0",
+    "mini-svg-data-uri": "^1.2.3",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "path": "^0.12.7",
+    "terser-webpack-plugin": "^5.0.0",
+    "webpack": "^5.1.3",
+    "webpack-bundle-analyzer": "^4.1.0",
+    "autoprefixer": "^10.0.2",
+    "webpack-merge": "^5.2.0",
     "webpack-dev-server": "^3.11.0"
   },
   "repository": {
@@ -57,23 +70,10 @@
     "url": "https://matheus-benits@bitbucket.org/easycarros/boilerplate-webpack-basic.git"
   },
   "dependencies": {
-    "clean-webpack-plugin": "^3.0.0",
-    "copy-webpack-plugin": "^6.2.1",
-    "css-minimizer-webpack-plugin": "^1.1.5",
     "dotenv": "^8.2.0",
-    "html-webpack-plugin": "^5.0.0-alpha.14",
-    "mini-css-extract-plugin": "^1.0.0",
-    "mini-svg-data-uri": "^1.2.3",
-    "optimize-css-assets-webpack-plugin": "^5.0.4",
-    "path": "^0.12.7",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-router-dom": "^5.2.0",
-    "terser-webpack-plugin": "^5.0.0",
-    "webpack": "^5.1.3",
-    "webpack-bundle-analyzer": "^4.1.0",
-    "autoprefixer": "^10.0.2",
-    "webpack-merge": "^5.2.0"
+    "react-router-dom": "^5.2.0"
   },
   "eslintIgnore": [
     "*.test.js"
