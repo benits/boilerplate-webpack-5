@@ -1,6 +1,6 @@
 {
   "name": "webpack-boilerplate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Customizable Boilerplate using Webpack 5, Babel, PostCSS and Sass with an active development server and an optimized production build.",
   "main": "./dist/index.html",
   "author": "Matheus Benites",
@@ -23,6 +23,7 @@
     "@babel/eslint-plugin": "^7.12.1",
     "@babel/plugin-proposal-class-properties": "^7.12.1",
     "@babel/plugin-transform-react-jsx": "^7.12.1",
+    "@babel/plugin-transform-runtime": "^7.12.1",
     "@babel/preset-env": "^7.12.1",
     "@babel/preset-react": "^7.12.1",
     "babel-loader": "^8.2.0",

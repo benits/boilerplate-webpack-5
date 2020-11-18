@@ -2,11 +2,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const svgToMiniDataURI = require('mini-svg-data-uri')
-const dotenv = require('dotenv')
-const webpack = require('webpack')
 const paths = require('./paths')
-
-const env = dotenv.config().parsed
 
 module.exports = {
   // Where webpack looks to start building the bundle
@@ -44,10 +40,6 @@ module.exports = {
       favicon: `${paths.src}/assets/icons/favicon.ico`,
       template: `${paths.src}/html/template.html`, // template file
       filename: 'index.html' // output file
-    }),
-
-    new webpack.DefinePlugin({
-      'process.env.APP_TITLE': JSON.stringify(env.APP_TITLE)
     })
   ],
 
@@ -80,7 +72,7 @@ module.exports = {
           { loader: 'postcss-loader', options: { sourceMap: true } },
           {
             loader: 'sass-loader',
-            options: { sourceMap: true, sourceMapContents: false }
+            options: { sourceMap: true }
           }
         ]
       },
